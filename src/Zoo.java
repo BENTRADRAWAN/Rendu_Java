@@ -28,22 +28,39 @@ public class Zoo {
     }
     //prosit3
     //inst12
+
     public boolean addAnimal(Animal animal) {
-        if ( searchAnimal(   animal ) != -1  && animalCount < animals.length) {
+        if (searchAnimal(animal) == -1 && animalCount < animals.length) {
             animals[animalCount] = animal;
             animalCount++;
             return true;
         }
-        return false; }
+        return false;
+    }
+
     //inst11
     public int searchAnimal(Animal animal) {
         for (int i = 0; i < animalCount; i++) {
-            if ( animals[i] != null && animals[i].name == animal.name) {
+            if (animals[i] != null && animals[i].name.equals(animal.name)) {
                 return i;
             }
         }
         return -1;
     }
 
+
+    //inst13
+    public boolean removeAnimal(Animal animal) {
+        int index = searchAnimal(animal);
+        if (index != -1) {
+            for (int i = index; i < animalCount - 1; i++) {
+                animals[i] = animals[i + 1];
+            }
+            animals[animalCount - 1] = null;
+            animalCount--;
+            return true;
+        }
+        return false;
+    }
 
 }

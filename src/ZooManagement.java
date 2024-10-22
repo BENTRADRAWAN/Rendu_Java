@@ -27,6 +27,7 @@ public class ZooManagement {
         Animal cat = new Animal("famille cat","cat",8,true);
         Animal dog = new Animal("famille dog","dog",8,true);
         Animal pig = new Animal("famille pig","pig",8,true);
+        Animal mouse = new Animal("famille mouse","mouse",8,true);
 
 
         Zoo myzoo=new Zoo("myzoo","tunis",25,11);
@@ -40,19 +41,27 @@ public class ZooManagement {
         myzoo.addAnimal(dog);
         myzoo.addAnimal(pig);
         myzoo.addAnimal(lion);
+        myzoo.addAnimal(mouse);
         //inst12
         boolean added = myzoo.addAnimal(lion);
         if (!added) {
             System.out.println("L'animal " + lion.name + " n'a pas pu être ajouté car il est déjà présent.");
         }
+        int index = myzoo.searchAnimal(pig);
 
         /*
-        int index = myzoo.searchAnimal(lion);
 
         if (index != -1) {
             System.out.println("L'animal " + lion.name + " se trouve à l'index " + index);
         } else {
             System.out.println("L'animal " + lion.name + " n'a pas été trouvé.");
         }*/
+        //inst13
+        boolean removed = myzoo.removeAnimal(mouse);
+        if (removed) {
+            System.out.println("L'animal " + mouse.name + " a été retiré avec succès.");
+        } else {
+            System.out.println("L'animal " + mouse.name + " n'a pas pu être retiré car il n'est pas présent.");
+        }
     }
 }
