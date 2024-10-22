@@ -39,12 +39,20 @@ public class ZooManagement {
         myzoo.addAnimal(cat);
         myzoo.addAnimal(dog);
         myzoo.addAnimal(pig);
+        myzoo.addAnimal(lion);
+        //inst12
+        boolean added = myzoo.addAnimal(lion);
+        if (!added) {
+            System.out.println("L'animal " + lion.name + " n'a pas pu être ajouté car il est déjà présent.");
+        }
+
+        /*
         int index = myzoo.searchAnimal(lion);
 
         if (index != -1) {
             System.out.println("L'animal " + lion.name + " se trouve à l'index " + index);
         } else {
             System.out.println("L'animal " + lion.name + " n'a pas été trouvé.");
-        }
+        }*/
     }
 }

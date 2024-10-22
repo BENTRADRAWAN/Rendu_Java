@@ -27,8 +27,9 @@ public class Zoo {
 
     }
     //prosit3
+    //inst12
     public boolean addAnimal(Animal animal) {
-        if (animalCount < animals.length) {
+        if ( searchAnimal(   animal ) != -1  && animalCount < animals.length) {
             animals[animalCount] = animal;
             animalCount++;
             return true;
