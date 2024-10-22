@@ -1,17 +1,16 @@
 //prosit2 inst4
 public class Zoo {
+    final int nbrCages = 25;
 
-    Animal[] animals = new Animal[25];
+    Animal[] animals = new Animal[nbrCages];
     String name;
     String city;
-    int nbrCages;
     int animalCount;
 
     public Zoo(String name, String city, int nbrCages, int animalCount) {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
-        this.nbrCages = nbrCages;
         this.animalCount = animalCount;
     }
 
@@ -61,6 +60,11 @@ public class Zoo {
             return true;
         }
         return false;
+    }
+    //inst14
+
+    public boolean isFull() {
+        return animalCount >= animals.length;
     }
 
 }

@@ -63,5 +63,11 @@ public class ZooManagement {
         } else {
             System.out.println("L'animal " + mouse.name + " n'a pas pu être retiré car il n'est pas présent.");
         }
+        //inst14
+        if (myzoo.isFull()) {
+            System.out.println("Le zoo est plein.");
+        } else {
+            System.out.println("Il reste de la place dans le zoo.");
+        }
     }
 }
