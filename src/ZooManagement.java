@@ -20,15 +20,12 @@ public class ZooManagement {
         zoo.nbrCages = sc.nextInt();
         System.out.println(zoo.zooName +" comporte " + zoo.nbrCages +" Cages ");
 //prosit2 inst4
-        Animal lion = new Animal();
-        lion.family="famillelion";
-        lion.name="Lion";
-        lion.age=8;
-        lion.isMammal=true;
-        Zoo myzoo=new Zoo();
-        myzoo.city="tunis";
-        myzoo.name="myzoo";
-        myzoo.nbrCages=25;
+
+
+        //inst6.7
+        Animal lion = new Animal("famille lion","lion",8,true);
+
+        Zoo myzoo=new Zoo("myzoo","tunis",25,25);
 
     }
 }
