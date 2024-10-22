@@ -25,7 +25,8 @@ public class ZooManagement {
         //inst6.7
         Animal lion = new Animal("famille lion","lion",8,true);
 
-        Zoo myzoo=new Zoo("myzoo","tunis",25,25);
-
+        Zoo myzoo=new Zoo("myzoo","tunis",25,11);
+        //inst8
+        myzoo.displayZoo(myzoo);
     }
 }
