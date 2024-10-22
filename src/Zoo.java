@@ -20,5 +20,10 @@ public class Zoo {
 
     }
 
+//inst9
+    @Override
+    public String toString() {
+        return "Zoo [Nom: " + name + ", Ville: " + city + ", Nombre de cages: " + nbrCages + "]";
 
+    }
 }

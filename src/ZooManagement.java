@@ -28,5 +28,7 @@ public class ZooManagement {
         Zoo myzoo=new Zoo("myzoo","tunis",25,11);
         //inst8
         myzoo.displayZoo(myzoo);
+        //inst9
+        System.out.println(myzoo.toString());
     }
 }
