@@ -30,7 +30,7 @@ public class ZooManagement {
         Animal mouse = new Animal("famille mouse","mouse",8,true);
 
 
-        Zoo myzoo=new Zoo("myzoo","tunis",25);
+        Zoo myzoo=new Zoo("myzoo","tunis");
         //inst8
        // myzoo.displayZoo(myzoo);
         //inst9
@@ -70,7 +70,7 @@ public class ZooManagement {
             System.out.println("Il reste de la place dans le zoo.");
         }
         //inst15
-       Zoo myzoo1 =new Zoo("zoo1","ksa",25);
+       Zoo myzoo1 =new Zoo("zoo1","ksa");
         Zoo largerZoo = myzoo.comparer(myzoo1, myzoo);
         System.out.println("Le zoo avec le plus d'animaux est : " + largerZoo.name);
 

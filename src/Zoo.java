@@ -7,11 +7,11 @@ public class Zoo {
     String city;
     int animalCount;
 
-    public Zoo(String name, String city, int animalCount) {
+    public Zoo(String name, String city ) {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
-        this.animalCount = animalCount;
+       // this.animalCount = animalCount;
     }
 
     public void displayZoo(Zoo zoo) {
