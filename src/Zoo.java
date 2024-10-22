@@ -26,4 +26,23 @@ public class Zoo {
         return "Zoo [Nom: " + name + ", Ville: " + city + ", Nombre de cages: " + nbrCages + "]";
 
     }
+    //prosit3
+    public boolean addAnimal(Animal animal) {
+        if (animalCount < animals.length) {
+            animals[animalCount] = animal;
+            animalCount++;
+            return true;
+        }
+        return false; }
+    //inst11
+    public int searchAnimal(Animal animal) {
+        for (int i = 0; i < animalCount; i++) {
+            if ( animals[i] != null && animals[i].name == animal.name) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
 }
