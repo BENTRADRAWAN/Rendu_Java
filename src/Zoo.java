@@ -7,7 +7,7 @@ public class Zoo {
     String city;
     int animalCount;
 
-    public Zoo(String name, String city, int nbrCages, int animalCount) {
+    public Zoo(String name, String city, int animalCount) {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
@@ -66,5 +66,13 @@ public class Zoo {
     public boolean isFull() {
         return animalCount >= animals.length;
     }
+//inst15
+public Zoo comparer(Zoo z1, Zoo z2) {
+    if (z1.animalCount < z2.animalCount) {
+        return z2;
+    } else {
+        return z1;
+    }
+}
 
 }
