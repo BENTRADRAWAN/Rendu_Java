@@ -7,4 +7,9 @@ public class Terrestre  extends Animal{
         super(family, name, age, isMammal);
         this.nbrLegs = nbrLegs;
     }
+    @Override
+    public String toString() {
+        return "Terrestrial Animal: " + name + ", Age: " + age + ", Number of Legs: " + nbrLegs;
+    }
+
 }

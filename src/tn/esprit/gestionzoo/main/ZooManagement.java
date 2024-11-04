@@ -5,8 +5,9 @@ public class ZooManagement {
 
     //instruction2 utilisation scanner
 
-    int nbrCages ;
-    String zooName ;
+    int nbrCages;
+    String zooName;
+
     public static void main(String[] args) {
 
         ZooManagement zoo = new ZooManagement();
@@ -24,16 +25,16 @@ public class ZooManagement {
 
 */
         //inst6.7
-        Animal lion = new Animal("famille lion","lion",8,true);
-        Animal cat = new Animal("famille cat","cat",8,true);
-        Animal dog = new Animal("famille dog","dog",8,true);
-        Animal pig = new Animal("famille pig","pig",8,true);
-        Animal mouse = new Animal("famille mouse","mouse",8,true);
+        Animal lion = new Animal("famille lion", "lion", 8, true);
+        Animal cat = new Animal("famille cat", "cat", 8, true);
+        Animal dog = new Animal("famille dog", "dog", 8, true);
+        Animal pig = new Animal("famille pig", "pig", 8, true);
+        Animal mouse = new Animal("famille mouse", "mouse", 8, true);
 
 
-        Zoo myzoo=new Zoo("myzoo","tunis");
+        Zoo myzoo = new Zoo("myzoo", "tunis");
         //inst8
-       // myzoo.displayZoo(myzoo);
+        // myzoo.displayZoo(myzoo);
         //inst9
         //System.out.println(myzoo.toString());
         myzoo.addAnimal(lion);
@@ -71,16 +72,25 @@ public class ZooManagement {
             System.out.println("Il reste de la place dans le zoo.");
         }
         //inst15
-       Zoo myzoo1 =new Zoo("zoo1","ksa");
+        Zoo myzoo1 = new Zoo("zoo1", "ksa");
         Zoo largerZoo = myzoo.comparer(myzoo1, myzoo);
         System.out.println("Le zoo avec le plus d'animaux est : " + largerZoo.getName());
+        ////prosit 5
+
+        Aquatic aquaticAnimal = new Aquatic("faamm1", "tortur", 14, true, "habitat");
+        Terrestre terrestrialAnimal = new Terrestre("famterr", "terr", 15, true, 26);
+        Dauphin dauphin = new Dauphin("fam5", "dauph", 10, true, 77, "habit");
+        Penguin penguin = new Penguin("fam7", "penguin", 4, false, 1, "habit2");
 
 
+
+
+        System.out.println(aquaticAnimal.toString());
+        System.out.println(terrestrialAnimal.toString());
+        System.out.println(dauphin.toString());
+        System.out.println(penguin.toString());
     }
 
-    ////prosit 5
-    Aquatic aquaticAnimal = new Aquatic( "faamm1","tortur",14,true,"habitat");
-    Terrestre terrestrialAnimal = new Terrestre("famterr","terr",15,true,26);
-    Dauphin dauphin = new Dauphin("fam5","dauph",10,true,77);
-    Penguin penguin = new Penguin("fam7","penguin",4,false,1);
+
+
 }
