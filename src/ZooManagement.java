@@ -45,7 +45,7 @@ public class ZooManagement {
         //inst12
         boolean added = myzoo.addAnimal(lion);
         if (!added) {
-            System.out.println("L'animal " + lion.name + " n'a pas pu être ajouté car il est déjà présent.");
+            System.out.println("L'animal " + lion.getName() + " n'a pas pu être ajouté car il est déjà présent.");
         }
         int index = myzoo.searchAnimal(pig);
 
@@ -59,9 +59,9 @@ public class ZooManagement {
         //inst13
         boolean removed = myzoo.removeAnimal(mouse);
         if (removed) {
-            System.out.println("L'animal " + mouse.name + " a été retiré avec succès.");
+            System.out.println("L'animal " + mouse.getName() + " a été retiré avec succès.");
         } else {
-            System.out.println("L'animal " + mouse.name + " n'a pas pu être retiré car il n'est pas présent.");
+            System.out.println("L'animal " + mouse.getName() + " n'a pas pu être retiré car il n'est pas présent.");
         }
         //inst14
         if (myzoo.isFull()) {
@@ -72,7 +72,7 @@ public class ZooManagement {
         //inst15
        Zoo myzoo1 =new Zoo("zoo1","ksa");
         Zoo largerZoo = myzoo.comparer(myzoo1, myzoo);
-        System.out.println("Le zoo avec le plus d'animaux est : " + largerZoo.name);
+        System.out.println("Le zoo avec le plus d'animaux est : " + largerZoo.getName());
 
 
     }

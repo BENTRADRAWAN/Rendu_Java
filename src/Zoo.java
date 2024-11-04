@@ -2,17 +2,45 @@
 public class Zoo {
     final int nbrCages = 25;
 
-    Animal[] animals = new Animal[nbrCages];
-    String name;
-    String city;
-    int animalCount;
+    private  Animal[] animals = new Animal[nbrCages];
+    private  String name;
+    private  String city;
+    private  int animalCount;
 
     public Zoo(String name, String city ) {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
        // this.animalCount = animalCount;
+
     }
+    public String getName() {
+        return name;
+    }
+    public String getCity() {
+        return city;
+    }
+    public int getAnimalCount() {
+        return animalCount;
+    }
+    //prosit4inst18
+    public void setName(String name) {
+        if (name == null ) {
+            System.out.println("Le nom du zoo ne doit pas être vide");
+        }
+        this.name = name;
+    }
+    public void setCity( String city ) {
+        this.city = city;
+    }
+
+
+
+
+
+
+
+
 
     public void displayZoo(Zoo zoo) {
         System.out.println(zoo.name + " " + zoo.city + " " + zoo.nbrCages);
@@ -45,7 +73,7 @@ public class Zoo {
     //inst11
     public int searchAnimal(Animal animal) {
         for (int i = 0; i < animalCount; i++) {
-            if (animals[i] != null && animals[i].name.equals(animal.name)) {
+            if (animals[i] != null && animals[i].getName().equals(animal.getName())) {
                 return i;
             }
         }
