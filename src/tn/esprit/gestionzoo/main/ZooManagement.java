@@ -79,8 +79,8 @@ public class ZooManagement {
     }
 
     ////prosit 5
-    Aquatic aquaticAnimal = new Aquatic();
-    Terrestre terrestrialAnimal = new Terrestre();
-    Dauphin dauphin = new Dauphin();
-    Penguin penguin = new Penguin();
+    Aquatic aquaticAnimal = new Aquatic( "faamm1","tortur",14,true,"habitat");
+    Terrestre terrestrialAnimal = new Terrestre("famterr","terr",15,true,26);
+    Dauphin dauphin = new Dauphin("fam5","dauph",10,true,77);
+    Penguin penguin = new Penguin("fam7","penguin",4,false,1);
 }
