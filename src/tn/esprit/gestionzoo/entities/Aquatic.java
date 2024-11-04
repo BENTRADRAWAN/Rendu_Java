@@ -11,5 +11,8 @@ public class Aquatic extends Animal {
     public String toString() {
         return "Aquatic Animal: " + name + ", Age: " + age + ", Habitat: " + habitat;
     }
+    public void swim() {
+        System.out.println("This aquatic animal is swimming.");
+    }
 
 }

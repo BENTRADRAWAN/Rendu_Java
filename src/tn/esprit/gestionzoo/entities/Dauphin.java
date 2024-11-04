@@ -11,5 +11,9 @@ public class Dauphin  extends Aquatic{
     public String toString() {
         return "Dolphin: " + name + ", Age: " + age + ", Habitat: " + habitat + ", Swimming Speed: " + swimmingDepth;
     }
+    @Override
+    public void swim() {
+        System.out.println("This dolphin is swimming.");
+    }
 
 }

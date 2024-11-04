@@ -89,6 +89,9 @@ public class ZooManagement {
         System.out.println(terrestrialAnimal.toString());
         System.out.println(dauphin.toString());
         System.out.println(penguin.toString());
+
+        aquaticAnimal.swim();
+        dauphin.swim();
     }
 
 
