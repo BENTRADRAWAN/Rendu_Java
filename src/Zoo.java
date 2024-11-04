@@ -25,17 +25,22 @@ public class Zoo {
         return "Zoo [Nom: " + name + ", Ville: " + city + ", Nombre de cages: " + nbrCages + "]";
 
     }
-    //prosit3
-    //inst12
+    //prosit4
+    //inst17
 
     public boolean addAnimal(Animal animal) {
-        if (searchAnimal(animal) == -1 && animalCount < animals.length) {
+        if (isFull()) {
+            System.out.println("Le zoo est plein, impossible d'ajouter l'animal: " );
+            return false;
+        }
+        if (searchAnimal(animal) == -1) {
             animals[animalCount] = animal;
             animalCount++;
             return true;
         }
         return false;
     }
+
 
     //inst11
     public int searchAnimal(Animal animal) {
