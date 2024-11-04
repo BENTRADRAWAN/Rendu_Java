@@ -60,6 +60,21 @@ public class Zoo {
         return maxDepth;
     }
 
+    public void displayNumberOfAquaticsByType() {
+        int dolphinCount = 0;
+        int penguinCount = 0;
+
+        for (Aquatic aquatic : aquaticAnimals) {
+            if (aquatic instanceof Dauphin) {
+                dolphinCount++;
+            } else if (aquatic instanceof Penguin) { // Assurez-vous d'avoir une classe Pingouin
+                penguinCount++;
+            }
+        }
+
+        System.out.println("Nombre de dauphins: " + dolphinCount);
+        System.out.println("Nombre de pingouins: " + penguinCount);
+    }
 
     public void addAquaticAnimal(Aquatic aquatic) {
         if (aquaticCount < aquaticAnimals.length) {

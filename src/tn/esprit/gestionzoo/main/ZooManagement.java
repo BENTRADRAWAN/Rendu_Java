@@ -96,6 +96,10 @@ public class ZooManagement {
         myzoo.addAquaticAnimal(dauphin);
         float maxDepth = myzoo.maxDolphinSwimmingDepth();
         System.out.println("La profondeur maximale des dauphins est: " + maxDepth);
+
+
+
+        myzoo.displayNumberOfAquaticsByType();
     }
 
     }
