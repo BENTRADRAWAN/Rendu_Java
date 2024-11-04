@@ -78,7 +78,7 @@ public class ZooManagement {
         System.out.println("Le zoo avec le plus d'animaux est : " + largerZoo.getName());
         ////prosit 5
 
-        Aquatic aquaticAnimal = new Aquatic("faamm1", "tortur", 14, true, "habitat");
+        //Aquatic aquaticAnimal = new Aquatic ();
         Terrestre terrestrialAnimal = new Terrestre("famterr", "terr", 15, true, 26);
         Dauphin dauphin = new Dauphin("fam5", "dauph", 10, true, 77, "habit");
         Penguin penguin = new Penguin("fam7", "penguin", 4, false, 1, "habit2");
@@ -86,12 +86,12 @@ public class ZooManagement {
 
 
 
-        System.out.println(aquaticAnimal.toString());
+       // System.out.println(aquaticAnimal.toString());
         System.out.println(terrestrialAnimal.toString());
         System.out.println(dauphin.toString());
         System.out.println(penguin.toString());
 
-        aquaticAnimal.swim();
+       // aquaticAnimal.swim();
         dauphin.swim();
         myzoo.addAquaticAnimal(dauphin);
 

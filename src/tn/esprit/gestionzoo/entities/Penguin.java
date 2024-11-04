@@ -8,8 +8,8 @@ public class Penguin  extends Aquatic{
         this.swimmingSpeed = swimmingSpeed;
     }
     @Override
-    public String toString() {
-        return "Penguin: " + name + ", Age: " + age + ", Habitat: " + habitat + ", Swimming Depth: " + swimmingSpeed;
+    public void swim() {
+        System.out.println("This penguin is swimming.");
     }
 
 }
