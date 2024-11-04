@@ -1,4 +1,4 @@
-//prosit2 inst4
+package tn.esprit.gestionzoo.entities;//prosit2 inst4
 
 public class Animal {
   private   String family;

@@ -1,3 +1,8 @@
+package tn.esprit.gestionzoo.entities;
+
+import tn.esprit.gestionzoo.entities.Animal;
+
+
 //prosit2 inst4
 public class Zoo {
     final int nbrCages = 25;
@@ -11,7 +16,7 @@ public class Zoo {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
-       // this.animalCount = animalCount;
+        // this.animalCount = animalCount;
 
     }
     public String getName() {
@@ -47,7 +52,7 @@ public class Zoo {
 
     }
 
-//inst9
+    //inst9
     @Override
     public String toString() {
         return "Zoo [Nom: " + name + ", Ville: " + city + ", Nombre de cages: " + nbrCages + "]";
@@ -99,13 +104,13 @@ public class Zoo {
     public boolean isFull() {
         return animalCount >= animals.length;
     }
-//inst15
-public Zoo comparer(Zoo z1, Zoo z2) {
-    if (z1.animalCount < z2.animalCount) {
-        return z2;
-    } else {
-        return z1;
+    //inst15
+    public Zoo comparer(Zoo z1, Zoo z2) {
+        if (z1.animalCount < z2.animalCount) {
+            return z2;
+        } else {
+            return z1;
+        }
     }
-}
 
 }
