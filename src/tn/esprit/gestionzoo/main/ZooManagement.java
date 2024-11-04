@@ -1,6 +1,5 @@
 package tn.esprit.gestionzoo.main;
-import tn.esprit.gestionzoo.entities.Zoo;
-import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.*;
 
 public class ZooManagement {
 
@@ -78,4 +77,10 @@ public class ZooManagement {
 
 
     }
+
+    ////prosit 5
+    Aquatic aquaticAnimal = new Aquatic();
+    Terrestre terrestrialAnimal = new Terrestre();
+    Dauphin dauphin = new Dauphin();
+    Penguin penguin = new Penguin();
 }
