@@ -5,7 +5,6 @@ public class Animal {
     protected String name;
     protected    int age;
     protected boolean isMammal;
-    private Aquatic[] aquaticAnimals;
 
     //inst6.7
 public Animal(String family, String name, int age, boolean isMammal) {
@@ -13,7 +12,6 @@ public Animal(String family, String name, int age, boolean isMammal) {
     this.name = name;
     this.age = age;
     this.isMammal = isMammal;
-    this.aquaticAnimals = new Aquatic[10]; 
 
 
 }

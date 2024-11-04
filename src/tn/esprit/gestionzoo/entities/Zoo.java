@@ -7,16 +7,22 @@ import tn.esprit.gestionzoo.entities.Animal;
 public class Zoo {
     final int nbrCages = 25;
 
-    private  Animal[] animals = new Animal[nbrCages];
-    private  String name;
-    private  String city;
-    private  int animalCount;
+    protected Animal[] animals = new Animal[nbrCages];
+    protected String name;
+    protected   String city;
+    protected   int animalCount;
+    protected Aquatic[] aquaticAnimals;
+    protected int aquaticCount;
+
+
+
 
     public Zoo(String name, String city ) {
         this.name = name;
         this.city = city;
         animals = new Animal[nbrCages];
-        // this.animalCount = animalCount;
+        this.aquaticAnimals = new Aquatic[10];
+        this.aquaticCount = 0;
 
     }
     public String getName() {
@@ -45,7 +51,15 @@ public class Zoo {
 
 
 
-
+    public void addAquaticAnimal(Aquatic aquatic) {
+        if (aquaticCount < aquaticAnimals.length) {
+            aquaticAnimals[aquaticCount] = aquatic;
+            aquaticCount++;
+            System.out.println("L'animal aquatique " + aquatic.getName() + " a été ajouté au zoo.");
+        } else {
+            System.out.println("Le zoo ne peut pas accueillir plus d'animaux aquatiques.");
+        }
+    }
 
     public void displayZoo(Zoo zoo) {
         System.out.println(zoo.name + " " + zoo.city + " " + zoo.nbrCages);

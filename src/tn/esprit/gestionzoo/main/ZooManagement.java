@@ -12,6 +12,7 @@ public class ZooManagement {
 
         ZooManagement zoo = new ZooManagement();
 
+
 /*
         System.out.println( zoo.zooName +" comporte " + zoo.nbrCages +" Cages ");
          Scanner sc=new Scanner(System.in);
@@ -92,7 +93,10 @@ public class ZooManagement {
 
         aquaticAnimal.swim();
         dauphin.swim();
+        myzoo.addAquaticAnimal(dauphin);
+
     }
+
 
 
 
