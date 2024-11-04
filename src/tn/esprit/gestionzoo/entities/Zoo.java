@@ -45,10 +45,20 @@ public class Zoo {
         this.city = city;
     }
 
+//prosit6
 
-
-
-
+    public float maxDolphinSwimmingDepth() {
+        float maxDepth = 0;
+        for (Aquatic aquatic : aquaticAnimals) {
+            if (aquatic instanceof Dauphin) {
+                Dauphin dolphin = (Dauphin) aquatic;
+                if (dolphin.swimmingDepth > maxDepth) {
+                    maxDepth = dolphin.swimmingDepth;
+                }
+            }
+        }
+        return maxDepth;
+    }
 
 
     public void addAquaticAnimal(Aquatic aquatic) {
