@@ -38,15 +38,17 @@ public class ZooManagement {
         // myzoo.displayZoo(myzoo);
         //inst9
         //System.out.println(myzoo.toString());
-        myzoo.addAnimal(lion);
-
-        myzoo.addAnimal(cat);
-        myzoo.addAnimal(dog);
-        myzoo.addAnimal(pig);
-        myzoo.addAnimal(lion);
-        myzoo.addAnimal(mouse);
+        try {
+            myzoo.addAnimal(lion);
+            myzoo.addAnimal(cat);
+            myzoo.addAnimal(dog);
+            myzoo.addAnimal(pig);
+            myzoo.addAnimal(mouse);
+        } catch (ZooFullException e) {
+            System.out.println("Erreur : " + e.getMessage());
+        }
         //inst12
-     
+
         int index = myzoo.searchAnimal(pig);
 
         /*

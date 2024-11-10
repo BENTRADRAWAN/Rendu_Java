@@ -99,15 +99,18 @@ public class Zoo {
     }
     //prosit4
     //inst17
-/////prosit7 instruction32
-    public void addAnimal(Animal animal) {
-
+/////prosit7 instruction33
+    public void addAnimal(Animal animal) throws ZooFullException {
+        if (isFull()) {
+            throw new ZooFullException("Le zoo est plein ! Impossible d'ajouter plus d'animaux.");
+        }
         if (searchAnimal(animal) == -1) {
             animals[animalCount] = animal;
             animalCount++;
-            System.out.println("animal " +animal.getName() +"ajouté");
+            System.out.println("Animal " + animal.getName() + " ajouté");
+        } else {
+            System.out.println("Échec de l'ajout : l'animal existe déjà.");
         }
-        System.out.println("échec d'ajout ");;
     }
 
 
