@@ -99,18 +99,15 @@ public class Zoo {
     }
     //prosit4
     //inst17
+/////prosit7 instruction32
+    public void addAnimal(Animal animal) {
 
-    public boolean addAnimal(Animal animal) {
-        if (isFull()) {
-            System.out.println("Le zoo est plein, impossible d'ajouter l'animal: " );
-            return false;
-        }
         if (searchAnimal(animal) == -1) {
             animals[animalCount] = animal;
             animalCount++;
-            return true;
+            System.out.println("animal " +animal.getName() +"ajouté");
         }
-        return false;
+        System.out.println("échec d'ajout ");;
     }
 
 

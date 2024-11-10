@@ -46,10 +46,7 @@ public class ZooManagement {
         myzoo.addAnimal(lion);
         myzoo.addAnimal(mouse);
         //inst12
-        boolean added = myzoo.addAnimal(lion);
-        if (!added) {
-            System.out.println("L'animal " + lion.getName() + " n'a pas pu être ajouté car il est déjà présent.");
-        }
+     
         int index = myzoo.searchAnimal(pig);
 
         /*
