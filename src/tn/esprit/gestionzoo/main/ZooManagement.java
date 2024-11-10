@@ -26,39 +26,31 @@ public class ZooManagement {
 
 */
         //inst6.7
-        Animal lion = new Animal("famille lion", "lion", 8, true);
-        Animal cat = new Animal("famille cat", "cat", 8, true);
-        Animal dog = new Animal("famille dog", "dog", 8, true);
-        Animal pig = new Animal("famille pig", "pig", 8, true);
-        Animal mouse = new Animal("famille mouse", "mouse", 8, true);
-
-
-        Zoo myzoo = new Zoo("myzoo", "tunis");
-        //inst8
-        // myzoo.displayZoo(myzoo);
-        //inst9
-        //System.out.println(myzoo.toString());
+//prosit7inst34
+        Zoo myzoo = new Zoo("Zoo National", "Tunisie");
         try {
+           Animal lion = new Animal("famille lion", "lion", 8, true);
+            Animal   cat = new Animal("famille cat", "cat", -5, true);
+            Animal  dog = new Animal("famille dog", "dog", 8, true);
+            Animal pig = new Animal("famille pig", "pig", 8, true);
+            Animal mouse = new Animal("famille mouse", "mouse", 8, true);
+
             myzoo.addAnimal(lion);
             myzoo.addAnimal(cat);
             myzoo.addAnimal(dog);
             myzoo.addAnimal(pig);
             myzoo.addAnimal(mouse);
+
+        } catch (InvalidAgeException e) {
+            System.out.println("Erreur : " + e.getMessage());
         } catch (ZooFullException e) {
             System.out.println("Erreur : " + e.getMessage());
         }
-        //inst12
+        /*
 
         int index = myzoo.searchAnimal(pig);
 
-        /*
 
-        if (index != -1) {
-            System.out.println("L'animal " + lion.name + " se trouve à l'index " + index);
-        } else {
-            System.out.println("L'animal " + lion.name + " n'a pas été trouvé.");
-        }*/
-        //inst13
         boolean removed = myzoo.removeAnimal(mouse);
         if (removed) {
             System.out.println("L'animal " + mouse.getName() + " a été retiré avec succès.");
@@ -100,7 +92,7 @@ public class ZooManagement {
 
         myzoo.displayNumberOfAquaticsByType();
     }
-
+*/}
     }
 
 
